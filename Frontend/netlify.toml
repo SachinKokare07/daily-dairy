@@ -7,6 +7,9 @@
   
   # Directory with the built files (Vite outputs to 'dist')
   publish = "dist"
+  
+  # Ignore exposed secret warnings (Firebase credentials are meant to be public)
+  ignore_exposed_secrets = true
 
 # Redirect all routes to index.html for client-side routing
 [[redirects]]
