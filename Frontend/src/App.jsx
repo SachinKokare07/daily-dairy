@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { onAuthChange, logoutUser, getCurrentUser } from './firebase/authService';
 import { getUserProfileData } from './firebase/userProfileService';
-import Login from './components/Auth/Login';
-import Dashboard from './components/Dashboard/Dashboard';
-import Header from './components/Header/Header';
-import LandingPage from './components/LandingPage';
+import Login from './Components/Auth/Login';
+import Dashboard from './Components/Dashboard/Dashboard';
+import Header from './Components/Header/Header';
+import LandingPage from './Components/LandingPage';
 
 function App() {
   const [user, setUser] = useState(null);
