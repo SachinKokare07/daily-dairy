@@ -1,0 +1,19 @@
+[build]
+  # Directory to run the build command from
+  base = "Frontend"
+  
+  # Build command
+  command = "npm run build"
+  
+  # Directory with the built files (Vite outputs to 'dist')
+  publish = "dist"
+
+# Redirect all routes to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (add your Firebase config here in Netlify UI)
+[build.environment]
+  NODE_VERSION = "18"
